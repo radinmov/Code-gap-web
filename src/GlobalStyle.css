@@ -1,20 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
     font-family: shabnam;
     src: url("../public/fonts/shabnam/Shabnam.woff") format("woff");
 }
+
 @font-face {
     font-family: shabnam;
     src: url("../public/fonts/shabnam/Shabnam.woff2") format("woff2");
 }
+
 body {
     font-family: shabnam;
-    background-color: black;
+    background: linear-gradient(50deg, #1c0042, #000000);
     color: white;
-}
-input {
-    outline: 0;
-    border: none;
+    direction: rtl;
 }

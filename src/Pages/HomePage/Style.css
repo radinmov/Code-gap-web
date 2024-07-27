@@ -20,3 +20,26 @@
 .dropdown:hover .dropbtn {
   background-color: #ffffff;
 }
+
+.button_ads button.b {
+  background: #068e7c;
+}
+
+.button_ads button:hover {
+  transition: 0.2s linear;
+  border: none;
+  background: #0B3730;
+}
+
+span {
+  color: #800e8a;
+}
+
+input {
+  background-color: #111425;
+}
+
+div.right a:hover {
+  transition: 0.3s linear;
+  color: #800e8a;
+}
