@@ -1,5 +1,9 @@
+import PrimaryLayout from "../../Componets/Layout/PriarmyLayout"
+
 export const City = () => {
     return (
-        <p>hello to welcome city </p>
+        <PrimaryLayout>
+            
+        </PrimaryLayout>
     )
 }

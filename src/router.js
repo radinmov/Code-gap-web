@@ -3,6 +3,8 @@ import { HomePage } from "./Pages/HomePage";
 import { Login } from "./Pages/Login";
 import { Register } from "./Pages/Register";
 import { City } from "./Pages/citys";
+import Header from "./Componets/Header";
+import  { Footer } from "./Componets/Footer";
 
 
 
@@ -23,6 +25,10 @@ const routes = createBrowserRouter([
   {
     path: '/citys',
     element: <City />
+  },
+  {
+    path: '/fo',
+    element: <Footer />
   },
 
 

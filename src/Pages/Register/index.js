@@ -1,5 +1,9 @@
+import PrimaryLayout from "../../Componets/Layout/PriarmyLayout"
+
 export const Register = () => {
     return (
-        <p>Register </p>
+       <PrimaryLayout>
+        
+       </PrimaryLayout>
     )
 }
