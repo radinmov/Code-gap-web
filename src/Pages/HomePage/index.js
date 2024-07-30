@@ -35,6 +35,15 @@ export const HomePage = () => {
         <p className=" text-4xl">آخرین های <span> کد گپ </span></p>
       </div>
     </div>
+    <div className="catogry">
+    <p className=" text-4xl">آخرین های <span> کد گپ </span></p>
+      <div className="catogry_inner">
+          <div className="prog">برنامه نویسی</div>
+          <div className="int">شبکه  </div>
+          <div className="int_2">شبکه سازی  </div>
+          <div className="ai">برنامه نویسی</div>
+      </div>
+    </div>
     </PrimaryLayout>
   );
 };
