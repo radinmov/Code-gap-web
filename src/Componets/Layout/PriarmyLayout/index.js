@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Header from "../../Header";
-import { Footer } from "../../Footer";
+// import { Footer } from "../../Footer";
 // import ScrollToTop from "../../ScrollToTop";
 export default function PrimaryLayout({ children }) {
   return (
@@ -8,7 +8,7 @@ export default function PrimaryLayout({ children }) {
       {/* <ScrollToTop /> */}
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 } 
