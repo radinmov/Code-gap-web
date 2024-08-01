@@ -51,6 +51,7 @@ export const HomePage = () => {
             <button className="prog w-96 h-36 text-black rounded-md">
               برنامه نویسی
             </button>
+            
             <button className="int w-96 h-36 text-black rounded-md">
               شبکه
             </button>
