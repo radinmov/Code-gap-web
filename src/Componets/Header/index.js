@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
-import { Modal } from "../Modal/Modal";
 export default function Header({send}) {
-    const [modalOpen, setModalOpen] = useState(false)
     const [Search, SetSearch] = useState(null);
     return (
         <div className="wrapper-inner flex justify-center">
@@ -39,18 +37,11 @@ export default function Header({send}) {
                         <Link to={"/"}>خانه</Link>
                     </div>
                     <div className="left" >
-                        <button onClick={() => setModalOpen(true)}>                 
                        <div className="profile">
                             <div className="text-white w-10 h-10">
                                 <UserCircleIcon />
                             </div>
                         </div>
-                        </button>
-                        <button onClick={() => setModalOpen(false)}>colse</button>
-                        {modalOpen && (
-                            <Modal />
-                            
-                        )}
                     </div>
                 </div>
             </div>

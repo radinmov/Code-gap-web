@@ -4,7 +4,7 @@ import { Login } from "./Pages/Login";
 import { Register } from "./Pages/Register";
 import { City } from "./Pages/citys";
 import Header from "./Componets/Header";
-import  { Footer } from "./Componets/Footer";
+import { Team } from "./Componets/Team";
 
 
 
@@ -27,8 +27,8 @@ const routes = createBrowserRouter([
     element: <City />
   },
   {
-    path: '/fo',
-    element: <Footer />
+    path: '/team',
+    element: <Team />
   },
 
 

@@ -40,7 +40,7 @@ export const HomePage = () => {
             />
           </div>
         </Link>
-        <div className="lasts_code_gap">
+        {/* <div className="lasts_code_gap">
           <p className=" text-4xl">
             آخرین های <span> کد گپ </span>
           </p>
@@ -62,26 +62,7 @@ export const HomePage = () => {
               هوش مصنوعی
             </button>
           </div>
-        </div>
-        <div className="events_iran flex w-full h-80">
-          <div className="right">
-            <img
-              className="w-72"
-              alt="pepople"
-              src="https://asrdidani.net/wp-content/uploads/2024/06/S-2-2048x1079.png"
-            />
-          </div>
-          <div className="left">
-            <p>یک رویداد بین الملی برای تمامی ایرانیان</p>
-            <p>
-              در کد گپ سعی میکنیم به دوستانمان قدرت خود ابرازی بدهیم که تجربه
-              هایشان را با یکدیگر در میان بگذارند{" "}
-            </p>
-            <button className="text-black bg-white rounded-md">
-              حمایت ازکد گپ
-            </button>
-          </div>
-        </div>
+        </div> */}
       </div>
     </PrimaryLayout>
   );
