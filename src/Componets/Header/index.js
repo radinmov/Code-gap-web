@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
-export default function Header({send}) {
+import Modal from '../Modal'
+export default function Header() {
+    const [Email, SetEmail] = useState(null);
+    const [Mob, SetMob] = useState(null);
+    const [Pass, SetPass] = useState(null);
+    const [RePass, SetRePass] = useState(null);
+    const [open, setOpen] = useState(false);
     const [Search, SetSearch] = useState(null);
     return (
         <div className="wrapper-inner flex justify-center">
@@ -37,11 +43,30 @@ export default function Header({send}) {
                         <Link to={"/"}>خانه</Link>
                     </div>
                     <div className="left" >
-                       <div className="profile">
-                            <div className="text-white w-10 h-10">
-                                <UserCircleIcon />
+                        <button onClick={() => setOpen(true)}>
+                            <div className="profile">
+                                <div className="text-white w-10 h-10">
+                                    <UserCircleIcon />
+                                </div>
                             </div>
-                        </div>
+                        </button>
+                        <Modal open={open} onClose={() => setOpen(false)}>
+                            <div className="container-modal-login">
+                                <div className="container-modal-inner">
+                                    <input placeholder="Enter your mobile" type="text" onChange={(e) => SetMob(e.target.value)} />
+                                    <input placeholder="Enter your mobile" type="Email" onChange={(e) => SetEmail(e.target.value)} />
+                                    <input placeholder="Enter your mobile" type="Password" onChange={(e) => SetPass(e.target.value)} />
+                                    <input placeholder="Enter your mobile" type="text" onChange={(e) => SetRePass(e.target.value)} />
+                                    <button
+                                        className="btn bg-black btn-light w-full"
+                                        onClick={() => setOpen(false)}
+                                    >
+                                        Cancel
+                                    </button>
+
+                                </div>
+                            </div>
+                        </Modal>
                     </div>
                 </div>
             </div>

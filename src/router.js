@@ -3,8 +3,6 @@ import { HomePage } from "./Pages/HomePage";
 import { Login } from "./Pages/Login";
 import { Register } from "./Pages/Register";
 import { City } from "./Pages/citys";
-import Header from "./Componets/Header";
-import { Team } from "./Componets/Team";
 
 
 
@@ -26,12 +24,6 @@ const routes = createBrowserRouter([
     path: '/citys',
     element: <City />
   },
-  {
-    path: '/team',
-    element: <Team />
-  },
-
-
 ]);
 
 
