@@ -52,6 +52,7 @@ export default function Header() {
                         </button>
                         <Modal open={open} onClose={() => setOpen(false)}>
                             <div className="container-modal-login">
+                                <p className="text-black">Login </p>
                                 <div className="container-modal-inner">
                                     <input placeholder="Enter your mobile" type="text" onChange={(e) => SetMob(e.target.value)} />
                                     <input placeholder="Enter your mobile" type="Email" onChange={(e) => SetEmail(e.target.value)} />
