@@ -8,61 +8,41 @@ export const HomePage = () => {
 
   return (
     <PrimaryLayout>
-      <div className="wrapper">
-        <div className="starting h-2/5 items-center justify-around flex">
-          <div className="d-right m-20 w-4/12">
-            <p className="co  m-4 text-4xl ">اشتراک گذاری تجربه‌ها </p>
-            <span className="m-4 text-fuchsia-600 text-5xl">در کد گپ</span>
-            <p className="mt-4">
+      <div className="wrapper px-4">
+        <div className="starting h-auto lg:h-2/5 flex flex-col lg:flex-row items-center justify-around">
+          <div className="d-right m-10 lg:m-20 w-full lg:w-4/12">
+            <p className="co m-4 text-2xl lg:text-4xl">اشتراک گذاری تجربه‌ها </p>
+            <span className="m-4 text-fuchsia-600 text-3xl lg:text-5xl">در کد گپ</span>
+            <p className="mt-4 text-center lg:text-left">
               فرصت خودابرازی و به اشتراک گذاری تجربه خودتان یا شنیدن تجربه‌های
               دیگران را در یک دورهمی دوستانه به دست بیاورید
             </p>
-            <div className="button_ads mt-10 flex justify-around">
-              <button className="w-56  h-10 rounded-md  border-2 border-white">
+            <div className="button_ads mt-10 flex flex-col lg:flex-row justify-around">
+              <button className="w-full lg:w-56 h-10 rounded-md border-2 border-white mb-4 lg:mb-0">
                 درباره کد گپ
               </button>
-              <button className="w-56  h-10 rounded-md  b">شرکت در کدگپ</button>
+              <button className="w-full lg:w-56 h-10 rounded-md b">
+                شرکت در کدگپ
+              </button>
             </div>
           </div>
-          <div className="d-left ">
-            <img alt="code-gap-logo" src="logos/code-gap-logo.png" />
+          <div className="d-left w-full lg:w-auto mt-10 lg:mt-0 flex justify-center lg:justify-end">
+            <img className="w-32 lg:w-auto" alt="code-gap-logo" src="logos/code-gap-logo.png" />
           </div>
         </div>
         <Link to={"/citys"}>
-          <div className="supoorted_city mt-12">
-            <p className="text-center text-4xl">
+          <div className="supoorted_city mt-12 text-center">
+            <p className="text-2xl lg:text-4xl">
               شهر های میزبان <span> کد گپ </span>
             </p>
             <img
-              className="w-1/4"
+              className="w-1/2 lg:w-1/4 mx-auto"
               alt="city_icon_tabriz"
               src="https://asrdidani.net/wp-content/uploads/2024/06/Untitled-1-32.png"
             />
           </div>
         </Link>
-        {/* <div className="lasts_code_gap">
-          <p className=" text-4xl">
-            آخرین های <span> کد گپ </span>
-          </p>
-        </div>
-        <div className="catogry p-14">
-          <p className="text-4xl ">دسته بندی رویداد</p>
-          <div className="catogry_inner flex w-9/12 ">
-            <button className="prog w-96 h-36 text-black rounded-md">
-              برنامه نویسی
-            </button>
-            
-            <button className="int w-96 h-36 text-black rounded-md">
-              شبکه
-            </button>
-            <button className="int_2 w-96 h-36 text-black rounded-md">
-              شبکه سازی
-            </button>
-            <button className="ai w-96 h-36 text-black rounded-md">
-              هوش مصنوعی
-            </button>
-          </div>
-        </div> */}
+
       </div>
     </PrimaryLayout>
   );
